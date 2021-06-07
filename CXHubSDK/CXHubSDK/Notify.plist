@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Enabled</key>
+	<true/>
+	<key>Debug</key>
+	<true/>
+	<key>LibNotify</key>
+	<dict>
+        <key>Activity</key><!-- Configuration of activity in libnotify -->
+        <dict>
+            <key>Colors</key>
+            <dict>
+                <key>DarkModeSupported</key><!-- Whether library should configure activity for dark mode or not -->
+                <true/>
+                <key>BackgroundColor</key>
+                <dict>
+                    <key>Light</key>
+                    <string>#70D05A</string>
+                    <key>Dark</key>
+                    <string>#70D05A</string>
+                </dict>
+                <key>TextColor</key>
+                <dict>
+                    <key>Light</key>
+                    <string>#70D05A</string>
+                    <key>Dark</key>
+                    <string>#70D05A</string>
+                </dict>
+                <key>AccentColor</key>
+                <dict>
+                    <key>Light</key>
+                    <string>#70D05A</string>
+                    <key>Dark</key>
+                    <string>#70D05A</string>
+                </dict>
+                <key>ButtonTextColor</key>
+                <dict>
+                    <key>Light</key>
+                    <string>#70D05A</string>
+                    <key>Dark</key>
+                    <string>#70D05A</string>
+                </dict>
+                <key>CloseButtonColor</key>
+                <dict>
+                    <key>Light</key>
+                    <string>#70D05A</string>
+                    <key>Dark</key>
+                    <string>#70D05A</string>
+                </dict>
+            </dict>
+            <key>FontType</key>
+            <string>Dynamic</string>
+        </dict>
+		<key>Enabled</key>
+		<true/>
+		<key>Application</key>
+		<dict>
+			<key>Name</key>
+			<string>ios-libnotify-app</string>
+			<key>Id</key>
+			<string>Identifier of application</string>
+			<key>Secret</key>
+			<string>Secret key you can get from CRM</string>
+		</dict>
+	</dict>
+	<key>SharedGroupId</key>
+	<string>group.ru.mail.notify.test</string>
+</dict>
+</plist>
