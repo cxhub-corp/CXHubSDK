@@ -2,7 +2,7 @@
 
 /**
  * An application is able to provide an object implementing this protocol to receive information
- * profiling, performance and debug events in libverify/libnotify SDK internal logic.
+ * profiling, performance and debug events in libnotify SDK internal logic.
  * This information may be reported to an arbitrary system like Google(Firebase) Analytics or Flurry as
  * a backup during integration period.
  * */

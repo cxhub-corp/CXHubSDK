@@ -2,7 +2,7 @@
 
 /**
  * An application is able to provide an object implementing this protocol to receive information
- * about critical failures in libverify/libnotify SDK internal logic. This information should be
+ * about critical failures in libnotify SDK internal logic. This information should be
  * reported to a crash handling system.
  * */
 @protocol CXUnhandledErrorReceiver <NSObject>
