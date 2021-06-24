@@ -1,12 +1,12 @@
-# NotifySDK
+# CXHubSDK
 
 CXHub SDK is a solution for sending push and inapp notifications
 
 ## Libraries
 
-There is library `Libnotify`. This is based on a core library called `NotifyCore`. All libraries are wrapped in dynamic frameworks.
+There is library `CXHubNotify`. This is based on a core library called `CXHubCore`. All libraries are wrapped in dynamic frameworks.
 
-### Libnotify
+### CXHubNotify
 
 Lets you work with push notifications and send events. Developed for integration to main application, to ServiceExtension and to ContentExtension.
 
@@ -23,10 +23,10 @@ Items from this list are required for correct integration of libraries to your a
 * enable framework and library(-ies) in config
 * enable Debug-mode to receive debug-information (but don't forget to disable Debug-mode in the release)
 
-### Libnotify setup
+### CXHubNotify setup
 
 * setup application identifier, and application secret in config of Notify (application name is obsoleted)
-* implement NTFNotifyDelegate protocol and install delegate to `[CXNotify getInstance]`
+* implement CXNotifyDelegate protocol and install delegate to `[CXNotify getInstance]`
 * configure activity (read 'Activity Settings')
 * create service extension and add library 'Notify' to it
 * create content extension and add library 'Notify' to it
