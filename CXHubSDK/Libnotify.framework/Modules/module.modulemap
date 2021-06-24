@@ -1,6 +1,0 @@
-framework module Libnotify {
-  umbrella header "Libnotify.h"
-
-  export *
-  module * { export * }
-}

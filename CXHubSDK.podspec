@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
     s.subspec 'Notify' do |sp|
         sp.dependency 'CXHubSDK/Core'
         sp.vendored_frameworks = 'CXHubSDK/CXHubNotify.framework'
-        sp.resources = ['CXHubSDK/Libnotify.framework/CXHubNotifyResources.bundle']
+        sp.resources = ['CXHubSDK/CXHubNotify.framework/CXHubNotifyResources.bundle']
     end    
 end
