@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'CXHubSDK'
-    s.version          = '0.0.5'
-    s.summary          = 'Libnotify implementation.'
+    s.version          = '0.0.6'
+    s.summary          = 'CXHubSDK implementation.'
     
     s.description      = <<-DESC
     Client SDK for CXHub Mail.ru service.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://cxhub.mail.ru'
     s.license          = { :type => 'LGPL-3.0', :file => 'CXHubSDK/LICENSE' }
     s.author           = { 'CXHub Mail.ru' => 'cxhub@corp.mail.ru' }
-    s.source           = { :git => 'https://github.com/cxhub-corp/CXHubSDK.git', :tag => 'v0.0.5' }
+    s.source           = { :git => 'https://github.com/cxhub-corp/CXHubSDK.git', :tag => 'v0.0.6' }
     s.ios.deployment_target = '9.0'
     
     s.default_subspec  = ['Core', 'Notify']

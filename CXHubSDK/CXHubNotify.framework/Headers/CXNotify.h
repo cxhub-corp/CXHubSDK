@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
-#import <NotifyCore/CXMacros.h>
-#import <NotifyCore/CXConstants.h>
+#import <CXHubCore/CXMacros.h>
+#import <CXHubCore/CXConstants.h>
 
 @class UIApplication;
 @class UNNotificationResponse;

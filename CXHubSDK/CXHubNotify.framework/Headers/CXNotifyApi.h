@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIApplication.h>
 
-#import <Libnotify/CXNotifyEventsCollector.h>
-#import <Libnotify/CXNotifyGDPRSupport.h>
+#import <CXHubNotify/CXNotifyEventsCollector.h>
+#import <CXHubNotify/CXNotifyGDPRSupport.h>
 
 /*!
  States for notifications

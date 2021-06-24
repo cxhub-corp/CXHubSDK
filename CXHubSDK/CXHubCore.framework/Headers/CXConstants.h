@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 
-#import <NotifyCore/CXMacros.h>
+#import <CXHubCore/CXMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
