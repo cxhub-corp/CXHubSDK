@@ -1,0 +1,6 @@
+framework module CXHubCore {
+  umbrella header "CXHubCore.h"
+
+  export *
+  module * { export * }
+}
