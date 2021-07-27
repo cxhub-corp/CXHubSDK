@@ -16,6 +16,6 @@
  * */
 -(void) onContentUpdated:(nullable CXContentExtensionData *) content
          forNotification:(nonnull UNNotification *)notification
-               withError:(nullable NSError *) error API_AVAILABLE(ios(10.0));
+               withError:(nullable NSError *) error;
 
 @end

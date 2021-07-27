@@ -40,7 +40,7 @@ CX_EXTERN NSString *const CX_LIBNOTIFY_ROOT_DATA_KEY;
  * content or service extensions to enable images in libnotify push notifications and more reliable
  * delivery confirmation logic.
  * */
-+(nullable id<CXNotifyExtensionApi>) getExtensionInstance API_AVAILABLE(ios(10.0));
++(nullable id<CXNotifyExtensionApi>) getExtensionInstance;
 
 /**
  * Shows libnotify debug view with buttons to query instance properties.
@@ -59,7 +59,7 @@ CX_EXTERN NSString *const CX_LIBNOTIFY_ROOT_DATA_KEY;
  * logic and threads will be not initialized).
  * */
 +(BOOL) requestNotificationExtensionContent:(UNNotification *)notification
-                               withDelegate:(id<CXContentExtensionDelegate>) delegate API_AVAILABLE(ios(10.0));
+                               withDelegate:(id<CXContentExtensionDelegate>) delegate;
 
 @end
 

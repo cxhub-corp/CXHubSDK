@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param eventsReceiver should implement either protocol CXUnhandledErrorReceiver
  * or CXMonitoringEventReceiver or both.
  */
-+ (BOOL) initExtensionWithDefaultConfigAndEventsReceiver:(nullable id)eventsReceiver NS_SWIFT_NAME(initExtensionWithDefaultConfig(andEventsReceiver:)) API_AVAILABLE(ios(10.0));
++ (BOOL) initExtensionWithDefaultConfigAndEventsReceiver:(nullable id)eventsReceiver NS_SWIFT_NAME(initExtensionWithDefaultConfig(andEventsReceiver:));
 
 /**
  * Initialize api for extension with custom config
@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
  * or CXMonitoringEventReceiver or both.
  */
 + (BOOL) initExtensionWithConfig:(CXAppConfig *)config
-              withEventsReceiver:(nullable id)eventsReceiver API_AVAILABLE(ios(10.0));
+              withEventsReceiver:(nullable id)eventsReceiver;
 
 @end
 
@@ -148,7 +148,7 @@ NS_ASSUME_NONNULL_BEGIN
  *          otherwise the original system handler
  * */
 +(nullable CXCallBack) didReceiveNotificationResponse:(UNNotificationResponse *)response
-                                 withCompletionHandler:(CXCallBack)completionHandler API_AVAILABLE(ios(10.0));
+                                 withCompletionHandler:(CXCallBack)completionHandler;
 
 /**
  * Proxy method to receive local notifications (when application is in foreground).
@@ -189,7 +189,7 @@ NS_ASSUME_NONNULL_BEGIN
  * */
 +(CXWillPresentNotificationResult)userNotificationCenter:(UNUserNotificationCenter *)center
                                   willPresentNotification:(UNNotification *)notification
-                                    withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler API_AVAILABLE(ios(10.0));
+                                    withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler;
 
 /**
  This method sends a notify internal event UnregisterGcmToken to server.
@@ -211,7 +211,7 @@ NS_ASSUME_NONNULL_BEGIN
  * logic and threads will be not initialized).
  * */
 +(BOOL) didReceiveExtensionNotificationRequest:(UNNotificationRequest *)request
-                            withContentHandler:(CXServiceExtensionCallback)contentHandler API_AVAILABLE(ios(10.0));
+                            withContentHandler:(CXServiceExtensionCallback)contentHandler;
 
 /**
  * Forces libnotify to complete all content processing logic and call provided in

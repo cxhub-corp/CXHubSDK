@@ -20,13 +20,11 @@ typedef void (^CXCallBack)(void);
 /**
  * Alias for function that will handle modified content from service extension.
  * */
-API_AVAILABLE(ios(10.0))
 typedef void (^CXServiceExtensionCallback)(UNNotificationContent *);
 
 /**
  * Alias for callback from AppDelegate
  * */
-API_AVAILABLE(ios(10.0))
 typedef void (^CXAppForegroundCallback)(UNNotificationPresentationOptions options);
 
 /**
