@@ -84,6 +84,13 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *) getInstanceId;
 
 /*!
+ An application could call this method to obtain push notification token, which could be used to
+ send push notifications directly to this particular token via Knuff.
+ @returns libnotify push_notification_token
+ */
+-(NSString *) getPushNotificationToken;
+
+/*!
  Allows to clear all libnotify cached push notification content.
  */
 -(void) clearCache;

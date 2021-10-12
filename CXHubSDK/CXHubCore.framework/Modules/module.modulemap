@@ -4,3 +4,8 @@ framework module CXHubCore {
   export *
   module * { export * }
 }
+
+module CXHubCore.Swift {
+    header "CXHubCore-Swift.h"
+    requires objc
+}
