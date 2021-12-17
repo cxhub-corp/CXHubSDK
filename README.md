@@ -219,7 +219,29 @@ Library Notify can work with dark mode. If your application supports dark-mode y
 
 Library allows to configure fonts in activity. You can use static fonts (by default), use dynamic fonts based on system fonts or you can configure custom fonts.
 To do this you have to set property **activitySettings.fontType** to **Custom** and implement few methods in NotifyDelegate. 
-After that library will asks fonts from your application. Also library observes changes in system settings and asks right fonts every time system settings changed. 
+After that library will asks fonts from your application. Also library observes changes in system settings and asks right fonts every time system settings changed.
+
+#### Set instance properties
+
+You can set property to instance, using these examples
+
+``` ObjectiveC
+// Set string-value property
+[[CXNotify getInstance] setInstanceProperty:@"TestPropertyStringName"
+                            withStringValue:@"TestPropertyStringValue"];
+
+// Set array-value property (items must be enumeratable)
+[[CXNotify getInstance] setInstanceProperty:@"TestPropertyArrayName"
+                             withArrayValue:
+                             @[@"Test", @"Property", @"Array",@"Value"]
+];
+
+// Set dictionary-value property
+[[CXNotify getInstance] setInstanceProperty: @"TestPropertyDictionaryName"
+                        withDictionaryValue:
+                        @{@"key1": @"value1", @"key2": @"value2"}
+];
+```
 
 ### Localization
 
@@ -237,11 +259,7 @@ Next recommendations will help you to avoid incorrect behaviour
 
 ## Requirements
 
-iOS 9.0
-
-## Known Issues
-
-* (iOS 9.*): APNS pushes delivered to active application will be rejected and library will send event PushStatus with value Failed.REJECTED_IOS9_FOREGROUND.  It's because of library doesn't contains tools to show incoming pushes inside application.
+iOS 12.1+
 
 ## License
 

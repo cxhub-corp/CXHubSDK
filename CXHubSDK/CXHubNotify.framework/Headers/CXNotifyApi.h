@@ -49,26 +49,44 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) setDelegate:(nullable id<CXNotifyDelegate>)delegate;
 
 /*!
- Sets named property for this particular instance. Unlike events collected using
- one of methods like {@link CXNotificationApi.collectEvent(NSString)}, notify API will keep
- track only for the last value for each property.
- @param key property key
- @param value property value
+ @deprecated
  */
--(void) setProperty:(NSString *) key withValueObject:(NSObject *) value;
+-(void) setProperty:(NSString *) key withValueObject:(NSObject *) value __attribute__((deprecated("Use setInstanceProperty:withStringValue:, setInstanceProperty:withArrayValue: or setInstanceProperty:withDictionaryValue")));
 
 /*!
- Works as method {@link CXNotificationApi#setProperty(NSString, NSObject)}, but allows to
- an application deliver set up properties with their values as soon as possible.
- @param key property key
- @param value property value
- @param deliverImmediately YES - if an application wishes to deliver this property
- as soon as possible, NO - otherwise
+ @deprecated
  */
 -(void) setProperty:(NSString *) key
     withValueObject:(NSObject *) value
- withImmediateLogic:(BOOL) deliverImmediately;
+ withImmediateLogic:(BOOL) deliverImmediately __attribute__((deprecated("Use setInstanceProperty:withStringValue:, setInstanceProperty:withArrayValue: or setInstanceProperty:withDictionaryValue:")));
 
+#pragma mark - Set instance property
+/*!
+ Sets named property for this particular instance.
+ @param keyString property key
+ @param valueString property string value
+ */
+-(void) setInstanceProperty: (NSString *) keyString
+            withStringValue: (NSString *) valueString;
+
+/*!
+ Sets named property for this particular instance.
+ @param keyString property key
+ @param valueArray property value
+ */
+-(void) setInstanceProperty: (NSString *) keyString
+             withArrayValue: (NSArray *) valueArray;
+
+/*!
+ Sets named property for this particular instance.
+ @param keyString property key
+ @param valueDictionary property value
+ */
+-(void) setInstanceProperty: (NSString *) keyString
+             withDictionaryValue: (NSDictionary *) valueDictionary;
+
+
+#pragma mark - Rest of methods
 /*!
  Allows to pass device push token to libnotify API. Use unchanged value received from AppDelegate
  callback.
