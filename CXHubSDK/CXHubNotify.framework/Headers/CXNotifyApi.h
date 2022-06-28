@@ -80,10 +80,30 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  Sets named property for this particular instance.
  @param keyString property key
+ @param valueString property string value
+ @param valueArray property value
+ */
+-(void) setInstanceProperty: (NSString *) keyString
+            withStringValue: (nullable NSString *) valueString
+             withArrayValue: (NSArray *) valueArray;
+
+/*!
+ Sets named property for this particular instance.
+ @param keyString property key
  @param valueDictionary property value
  */
 -(void) setInstanceProperty: (NSString *) keyString
-             withDictionaryValue: (NSDictionary *) valueDictionary;
+        withDictionaryValue: (NSDictionary *) valueDictionary;
+
+/*!
+ Sets named property for this particular instance.
+ @param keyString property key
+ @param valueString property string value
+ @param valueDictionary property value
+ */
+-(void) setInstanceProperty: (NSString *) keyString
+            withStringValue: (nullable NSString *) valueString
+        withDictionaryValue: (NSDictionary *) valueDictionary;
 
 
 #pragma mark - Rest of methods
