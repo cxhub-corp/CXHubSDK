@@ -6,6 +6,6 @@ framework module CXHubCore {
 }
 
 module CXHubCore.Swift {
-    header "CXHubCore-Swift.h"
-    requires objc
+  header "CXHubCore-Swift.h"
+  requires objc
 }

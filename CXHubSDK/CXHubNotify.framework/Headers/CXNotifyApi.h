@@ -37,6 +37,17 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) setUserId:(nullable NSString *) userId;
 
 /*!
+ Return saved user id
+ */
+-(NSString *) getUserId;
+
+/*!
+ Return saved user id
+ */
+-(void) setUserIdChangeListener:(void (^)(NSString *, NSString *)) listener;
+
+
+/*!
  State of notifications
  */
 @property (nonatomic, assign) CXNotificationState notificationState;
