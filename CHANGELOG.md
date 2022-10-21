@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.0.34
+
+* MAP-1439: Исправлен метод openUrl в CXNotifyDelegate
+
+## v2.0.33
 ## v2.0.32
 
 * MAP-1423: Исправлен краш setUserProperty Argument user_id can't be null

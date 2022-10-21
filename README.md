@@ -40,7 +40,7 @@ Items from this list are required for correct integration of libraries to your a
 ##### Libnotify pod
 
 ```ruby
-pod 'CXHubSDK', 'x.x.x' # Please input specific version
+pod 'CXHub', 'x.x.x' # Please input specific version
 ```
 
 ##### Install library
