@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'CXHubSDK'
-    s.version          = '2.0.34'
+    s.version          = '2.0.35'
     s.summary          = 'CXHubSDK implementation.'
     
     s.description      = <<-DESC
@@ -10,18 +10,17 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://cxhub.mail.ru'
     s.license          = { :type => 'LGPL-3.0', :file => 'CXHubSDK/LICENSE' }
     s.author           = { 'CXHub Mail.ru' => 'cxhub@corp.mail.ru' }
-    s.source           = { :git => 'https://github.com/cxhub-corp/CXHubSDK.git', :tag => 'v2.0.34' }
+    s.source           = { :git => 'https://github.com/cxhub-corp/CXHubSDK.git', :tag => 'v2.0.35' }
     s.ios.deployment_target = '9.0'
     
     s.default_subspec  = ['Core', 'Notify']
     
     s.subspec 'Core' do |sp|
-        sp.vendored_frameworks = 'CXHubSDK/CXHubCore.framework'
+        sp.vendored_frameworks = 'CXHubSDK/CXHubCore.xcframework'
     end
     
     s.subspec 'Notify' do |sp|
         sp.dependency 'CXHubSDK/Core'
-        sp.vendored_frameworks = 'CXHubSDK/CXHubNotify.framework'
-        sp.resources = ['CXHubSDK/CXHubNotify.framework/CXHubNotifyResources.bundle']
+        sp.vendored_frameworks = 'CXHubSDK/CXHubNotify.xcframework'
     end    
 end

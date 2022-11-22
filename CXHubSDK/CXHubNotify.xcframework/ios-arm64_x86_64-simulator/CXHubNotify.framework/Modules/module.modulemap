@@ -1,0 +1,6 @@
+framework module CXHubNotify {
+  umbrella header "CXHubNotify.h"
+
+  export *
+  module * { export * }
+}
