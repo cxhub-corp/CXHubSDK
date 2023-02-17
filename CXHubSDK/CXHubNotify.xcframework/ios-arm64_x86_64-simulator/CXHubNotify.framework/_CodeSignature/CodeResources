@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CXHubNotifyResources.bundle/Assets.car</key>
+		<data>
+		CXj12IKMShmFZrWPurBk7O6W84Y=
+		</data>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/06A-3k-dkT-view-2k9-6s-Cyf.nib</key>
 		<data>
-		LlR7ZI4njnidd38Tju5mdDVSrnM=
+		aeC7gLJsdX2Z82F3QEJD96P3th4=
 		</data>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +18,7 @@
 		</data>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/UITableViewController-06A-3k-dkT.nib</key>
 		<data>
-		9/mqKVBJQvXHSe2SyifAcKeysfo=
+		Kab39Okw2gTaYP9eV/ZrZYV5AwE=
 		</data>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/UIViewController-pno-NM-fN4.nib</key>
 		<data>
@@ -22,11 +26,11 @@
 		</data>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/pno-NM-fN4-view-gLG-lB-1JF.nib</key>
 		<data>
-		Zr5DHyW4bwA5vM9cZoxMlRWkUaw=
+		zVQhlT/HNZb9EMtxe/VIZdjNC78=
 		</data>
 		<key>CXHubNotifyResources.bundle/Landing.storyboardc/CXLandingViewController.nib</key>
 		<data>
-		Ddl/XnmFFDETPw5X9ZPoYTrYS5s=
+		KVy/RrqjCuW7jpOORN9EbIsqMVw=
 		</data>
 		<key>CXHubNotifyResources.bundle/Landing.storyboardc/Info.plist</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>CXHubNotifyResources.bundle/Landing.storyboardc/wcB-cs-nhv-view-aor-9o-EL9.nib</key>
 		<data>
-		Nf+M8U3+L3aBUZaPuZwFekHHJdk=
+		DYeohyqV/iIaHRB9OJR4R+Ng3BY=
 		</data>
 		<key>CXHubNotifyResources.bundle/close_button.png</key>
 		<data>
@@ -42,11 +46,11 @@
 		</data>
 		<key>CXHubNotifyResources.bundle/close_button@2x.png</key>
 		<data>
-		nbv+QOQ7zZkFvbyBilNmYAxXKNQ=
+		X4uIXo56ZSbDEzh27UZx1hgP70M=
 		</data>
 		<key>CXHubNotifyResources.bundle/close_button@3x.png</key>
 		<data>
-		2jYSV1r8u3JAkAfuYtFA6M+aD48=
+		q7Sw+cYnzmltwupUSiZoto7Pow0=
 		</data>
 		<key>Headers/CXContentExtensionData.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nhgE6gzS0tP833cWKIBGaLclVmk=
+		QAxdkagcQYw2nlgK/jrKMq1NClY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +99,18 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CXHubNotifyResources.bundle/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vJ+cDSWe8yNszH17wa+78036v9iJ3Q8UK4PR30oXvsU=
+			</data>
+		</dict>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/06A-3k-dkT-view-2k9-6s-Cyf.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VHuLQj+l6dwPCtfBK1396ia9kuAvstF+Z9bfplxndHM=
+			QJVB7DtDJmHVcEXhjLVWOikuGIX8HxGgK/vT71PCoOU=
 			</data>
 		</dict>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/Info.plist</key>
@@ -113,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fAMFqMIoKdXCG5fmIaZJQLGtHHVoZymqmUbDiqQsJCc=
+			9ExElGBGXDAqeaBhOfEgPYZVCNZvamoSnVzEFWdNVbA=
 			</data>
 		</dict>
 		<key>CXHubNotifyResources.bundle/DebugSettings.storyboardc/UIViewController-pno-NM-fN4.nib</key>
@@ -127,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E4gCcFzXt8vKGnO9WMFyTPxIsNLb9EDUH8Gl79Aa+/k=
+			OOg0Y4tb3q/fUJWoaMyqTdZYvAY7NYP1skW2QYKL/18=
 			</data>
 		</dict>
 		<key>CXHubNotifyResources.bundle/Landing.storyboardc/CXLandingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AsfpyclY3q+7DzxFTSDtQgLoaF7/lI2ADR8izqpGBxk=
+			xd9N0VcbGzHccq2cwroKqHi1UFOoh4VmiC+FeyTy5Rc=
 			</data>
 		</dict>
 		<key>CXHubNotifyResources.bundle/Landing.storyboardc/Info.plist</key>
@@ -148,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+duTtCwhyyCD8mzEFhfoxbK87syH3Hub+Cy9dUms05M=
+			a48vCAf9N6Y0zlwZ5MfIHZkSMwF+efQ3GO89iDU723o=
 			</data>
 		</dict>
 		<key>CXHubNotifyResources.bundle/close_button.png</key>
@@ -162,14 +173,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rlF3rfNLkAXLKYH2/mcB/IOpqo4qick/YrjeCQpQYu0=
+			VeqnebzDhowFJmtQNOgmPu6I8LqLEJV+H62XItKg7Lo=
 			</data>
 		</dict>
 		<key>CXHubNotifyResources.bundle/close_button@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VCDZMmpe7I98bPGrWERpqd6IjuADCH+FMBsI6cbAAwI=
+			U+2FHHgio8+T56WX8mbFM3XPWbmQ9s7mThRqxvOCtQo=
 			</data>
 		</dict>
 		<key>Headers/CXContentExtensionData.h</key>

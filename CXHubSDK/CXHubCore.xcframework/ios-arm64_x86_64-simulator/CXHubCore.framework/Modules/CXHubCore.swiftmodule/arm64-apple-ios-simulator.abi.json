@@ -1,0 +1,2238 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "CXHubCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CXHubCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CXKeychainSwiftCBridge",
+        "printedName": "CXKeychainSwiftCBridge",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lastResultCode",
+            "printedName": "lastResultCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC14lastResultCodes5Int32Vvp",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC14lastResultCodes5Int32Vvp",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC14lastResultCodes5Int32Vvg",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC14lastResultCodes5Int32Vvg",
+                "moduleName": "CXHubCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessGroup",
+            "printedName": "accessGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvp",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvp",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvg",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvg",
+                "moduleName": "CXHubCore",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvs",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvs",
+                "moduleName": "CXHubCore",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvM",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC11accessGroupSSSgvM",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "synchronizable",
+            "printedName": "synchronizable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvp",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvp",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvg",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvg",
+                "moduleName": "CXHubCore",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvs",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvs",
+                "moduleName": "CXHubCore",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvM",
+                "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC14synchronizableSbvM",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)set:forKey:",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC3set_6forKeySbSS_SStF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setData",
+            "printedName": "setData(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)setData:forKey:",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC7setData_6forKeySb10Foundation0G0V_SStF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBool",
+            "printedName": "setBool(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)setBool:forKey:",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC7setBool_6forKeyS2b_SStF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)get:",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC3getySSSgSSF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getData",
+            "printedName": "getData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)getData:",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC7getDatay10Foundation0G0VSgSSF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBool",
+            "printedName": "getBool(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore22CXKeychainSwiftCBridgeC7getBoolySbSgSSF",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC7getBoolySbSgSSF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)delete:",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC6deleteySbSSF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clear",
+            "printedName": "clear()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)clear",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC5clearSbyF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CXKeychainSwiftCBridge",
+                "printedName": "CXHubCore.CXKeychainSwiftCBridge",
+                "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge(im)init",
+            "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeCACycfc",
+            "moduleName": "CXHubCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CXHubCore@objc(cs)CXKeychainSwiftCBridge",
+        "mangledName": "$s9CXHubCore22CXKeychainSwiftCBridgeC",
+        "moduleName": "CXHubCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "CXHubCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CXHubCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CXKeychain",
+        "printedName": "CXKeychain",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lastResultCode",
+            "printedName": "lastResultCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore10CXKeychainC14lastResultCodes5Int32Vvp",
+            "mangledName": "$s9CXHubCore10CXKeychainC14lastResultCodes5Int32Vvp",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC14lastResultCodes5Int32Vvg",
+                "mangledName": "$s9CXHubCore10CXKeychainC14lastResultCodes5Int32Vvg",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC14lastResultCodes5Int32Vvs",
+                "mangledName": "$s9CXHubCore10CXKeychainC14lastResultCodes5Int32Vvs",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC14lastResultCodes5Int32VvM",
+                "mangledName": "$s9CXHubCore10CXKeychainC14lastResultCodes5Int32VvM",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessGroup",
+            "printedName": "accessGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore10CXKeychainC11accessGroupSSSgvp",
+            "mangledName": "$s9CXHubCore10CXKeychainC11accessGroupSSSgvp",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC11accessGroupSSSgvg",
+                "mangledName": "$s9CXHubCore10CXKeychainC11accessGroupSSSgvg",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC11accessGroupSSSgvs",
+                "mangledName": "$s9CXHubCore10CXKeychainC11accessGroupSSSgvs",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC11accessGroupSSSgvM",
+                "mangledName": "$s9CXHubCore10CXKeychainC11accessGroupSSSgvM",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "synchronizable",
+            "printedName": "synchronizable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore10CXKeychainC14synchronizableSbvp",
+            "mangledName": "$s9CXHubCore10CXKeychainC14synchronizableSbvp",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC14synchronizableSbvg",
+                "mangledName": "$s9CXHubCore10CXKeychainC14synchronizableSbvg",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC14synchronizableSbvs",
+                "mangledName": "$s9CXHubCore10CXKeychainC14synchronizableSbvs",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC14synchronizableSbvM",
+                "mangledName": "$s9CXHubCore10CXKeychainC14synchronizableSbvM",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CXKeychain",
+                "printedName": "CXHubCore.CXKeychain",
+                "usr": "s:9CXHubCore10CXKeychainC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9CXHubCore10CXKeychainCACycfc",
+            "mangledName": "$s9CXHubCore10CXKeychainCACycfc",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(keyPrefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CXKeychain",
+                "printedName": "CXHubCore.CXKeychain",
+                "usr": "s:9CXHubCore10CXKeychainC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9CXHubCore10CXKeychainC9keyPrefixACSS_tcfc",
+            "mangledName": "$s9CXHubCore10CXKeychainC9keyPrefixACSS_tcfc",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:forKey:withAccess:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CXHubCore.CXKeychainAccessOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC3set_6forKey10withAccessSbSS_SSAA0cH7OptionsOSgtF",
+            "mangledName": "$s9CXHubCore10CXKeychainC3set_6forKey10withAccessSbSS_SSAA0cH7OptionsOSgtF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:forKey:withAccess:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CXHubCore.CXKeychainAccessOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC3set_6forKey10withAccessSb10Foundation4DataV_SSAA0cH7OptionsOSgtF",
+            "mangledName": "$s9CXHubCore10CXKeychainC3set_6forKey10withAccessSb10Foundation4DataV_SSAA0cH7OptionsOSgtF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:forKey:withAccess:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CXHubCore.CXKeychainAccessOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC3set_6forKey10withAccessS2b_SSAA0cH7OptionsOSgtF",
+            "mangledName": "$s9CXHubCore10CXKeychainC3set_6forKey10withAccessS2b_SSAA0cH7OptionsOSgtF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC3getySSSgSSF",
+            "mangledName": "$s9CXHubCore10CXKeychainC3getySSSgSSF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getData",
+            "printedName": "getData(_:asReference:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC7getData_11asReference10Foundation0E0VSgSS_SbtF",
+            "mangledName": "$s9CXHubCore10CXKeychainC7getData_11asReference10Foundation0E0VSgSS_SbtF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBool",
+            "printedName": "getBool(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC7getBoolySbSgSSF",
+            "mangledName": "$s9CXHubCore10CXKeychainC7getBoolySbSgSSF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC6deleteySbSSF",
+            "mangledName": "$s9CXHubCore10CXKeychainC6deleteySbSSF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allKeys",
+            "printedName": "allKeys",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore10CXKeychainC7allKeysSaySSGvp",
+            "mangledName": "$s9CXHubCore10CXKeychainC7allKeysSaySSGvp",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore10CXKeychainC7allKeysSaySSGvg",
+                "mangledName": "$s9CXHubCore10CXKeychainC7allKeysSaySSGvg",
+                "moduleName": "CXHubCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "clear",
+            "printedName": "clear()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore10CXKeychainC5clearSbyF",
+            "mangledName": "$s9CXHubCore10CXKeychainC5clearSbyF",
+            "moduleName": "CXHubCore",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9CXHubCore10CXKeychainC",
+        "mangledName": "$s9CXHubCore10CXKeychainC",
+        "moduleName": "CXHubCore",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CXHubCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "CXHubCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CXKeychainConstants",
+        "printedName": "CXKeychainConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accessGroup",
+            "printedName": "accessGroup",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV11accessGroupSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV11accessGroupSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV11accessGroupSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV11accessGroupSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessible",
+            "printedName": "accessible",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV10accessibleSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV10accessibleSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV10accessibleSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV10accessibleSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attrAccount",
+            "printedName": "attrAccount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV11attrAccountSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV11attrAccountSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV11attrAccountSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV11attrAccountSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attrSynchronizable",
+            "printedName": "attrSynchronizable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV18attrSynchronizableSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV18attrSynchronizableSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV18attrSynchronizableSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV18attrSynchronizableSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "klass",
+            "printedName": "klass",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV5klassSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV5klassSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV5klassSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV5klassSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "matchLimit",
+            "printedName": "matchLimit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV10matchLimitSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV10matchLimitSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV10matchLimitSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV10matchLimitSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "returnData",
+            "printedName": "returnData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV10returnDataSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV10returnDataSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV10returnDataSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV10returnDataSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "valueData",
+            "printedName": "valueData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV9valueDataSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV9valueDataSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV9valueDataSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV9valueDataSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "returnReference",
+            "printedName": "returnReference",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV15returnReferenceSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV15returnReferenceSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV15returnReferenceSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV15returnReferenceSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "returnAttributes",
+            "printedName": "returnAttributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV16returnAttributesSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV16returnAttributesSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV16returnAttributesSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV16returnAttributesSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "secMatchLimitAll",
+            "printedName": "secMatchLimitAll",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore19CXKeychainConstantsV16secMatchLimitAllSSvpZ",
+            "mangledName": "$s9CXHubCore19CXKeychainConstantsV16secMatchLimitAllSSvpZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore19CXKeychainConstantsV16secMatchLimitAllSSvgZ",
+                "mangledName": "$s9CXHubCore19CXKeychainConstantsV16secMatchLimitAllSSvgZ",
+                "moduleName": "CXHubCore",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9CXHubCore19CXKeychainConstantsV",
+        "mangledName": "$s9CXHubCore19CXKeychainConstantsV",
+        "moduleName": "CXHubCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "CXHubCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CXKeychainAccessOptions",
+        "printedName": "CXKeychainAccessOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accessibleWhenUnlocked",
+            "printedName": "accessibleWhenUnlocked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CXHubCore.CXKeychainAccessOptions.Type) -> CXHubCore.CXKeychainAccessOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CXKeychainAccessOptions",
+                        "printedName": "CXHubCore.CXKeychainAccessOptions",
+                        "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO22accessibleWhenUnlockedyA2CmF",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO22accessibleWhenUnlockedyA2CmF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessibleWhenUnlockedThisDeviceOnly",
+            "printedName": "accessibleWhenUnlockedThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CXHubCore.CXKeychainAccessOptions.Type) -> CXHubCore.CXKeychainAccessOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CXKeychainAccessOptions",
+                        "printedName": "CXHubCore.CXKeychainAccessOptions",
+                        "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO36accessibleWhenUnlockedThisDeviceOnlyyA2CmF",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO36accessibleWhenUnlockedThisDeviceOnlyyA2CmF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessibleAfterFirstUnlock",
+            "printedName": "accessibleAfterFirstUnlock",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CXHubCore.CXKeychainAccessOptions.Type) -> CXHubCore.CXKeychainAccessOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CXKeychainAccessOptions",
+                        "printedName": "CXHubCore.CXKeychainAccessOptions",
+                        "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO26accessibleAfterFirstUnlockyA2CmF",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO26accessibleAfterFirstUnlockyA2CmF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessibleAfterFirstUnlockThisDeviceOnly",
+            "printedName": "accessibleAfterFirstUnlockThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CXHubCore.CXKeychainAccessOptions.Type) -> CXHubCore.CXKeychainAccessOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CXKeychainAccessOptions",
+                        "printedName": "CXHubCore.CXKeychainAccessOptions",
+                        "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO40accessibleAfterFirstUnlockThisDeviceOnlyyA2CmF",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO40accessibleAfterFirstUnlockThisDeviceOnlyyA2CmF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessibleWhenPasscodeSetThisDeviceOnly",
+            "printedName": "accessibleWhenPasscodeSetThisDeviceOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CXHubCore.CXKeychainAccessOptions.Type) -> CXHubCore.CXKeychainAccessOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CXKeychainAccessOptions",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions",
+                    "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CXHubCore.CXKeychainAccessOptions.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CXKeychainAccessOptions",
+                        "printedName": "CXHubCore.CXKeychainAccessOptions",
+                        "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO39accessibleWhenPasscodeSetThisDeviceOnlyyA2CmF",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO39accessibleWhenPasscodeSetThisDeviceOnlyyA2CmF",
+            "moduleName": "CXHubCore",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CXKeychainAccessOptions",
+                "printedName": "CXHubCore.CXKeychainAccessOptions",
+                "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CXKeychainAccessOptions",
+                "printedName": "CXHubCore.CXKeychainAccessOptions",
+                "usr": "s:9CXHubCore23CXKeychainAccessOptionsO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO2eeoiySbAC_ACtFZ",
+            "moduleName": "CXHubCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO9hashValueSivp",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO9hashValueSivp",
+            "moduleName": "CXHubCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9CXHubCore23CXKeychainAccessOptionsO9hashValueSivg",
+                "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO9hashValueSivg",
+                "moduleName": "CXHubCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9CXHubCore23CXKeychainAccessOptionsO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO4hash4intoys6HasherVz_tF",
+            "moduleName": "CXHubCore",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9CXHubCore23CXKeychainAccessOptionsO",
+        "mangledName": "$s9CXHubCore23CXKeychainAccessOptionsO",
+        "moduleName": "CXHubCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vladimir.kukhar\/Documents\/VK\/Libnotify_iOS\/libnotify-ios\/notify-core\/NotifyCore\/ThirdParty\/CXKeychain\/CXKeychain.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vladimir.kukhar\/Documents\/VK\/Libnotify_iOS\/libnotify-ios\/notify-core\/NotifyCore\/ThirdParty\/CXKeychain\/CXKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1500,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimir.kukhar\/Documents\/VK\/Libnotify_iOS\/libnotify-ios\/notify-core\/NotifyCore\/ThirdParty\/CXKeychain\/CXKeychain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6002,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
