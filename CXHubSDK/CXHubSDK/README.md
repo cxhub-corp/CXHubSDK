@@ -242,6 +242,97 @@ You can set property to instance, using these examples
                         @{@"key1": @"value1", @"key2": @"value2"}
 ];
 ```
+#### Use of toast buttons (UNNotificationAction)
+
+Library allows to use toast buttons (there is an option in Web interface to combine action with user event, which will be delivered to CXHub and so specific actions can be tracked). To use CXHubSDK with toast buttons there are several requirements:
+1) Both NotificationServiceExtension and Content extension should be added to the app and properly tuned.
+2) All modules (main app, service extension, content extension) have to be members of one app group.
+3) Content extension Info.plist file must contain **UNNotificationExtensionCategory** key (under **NSExtensionAttributes**) with array of category identifier strings. The latter must contain
+    **libnotify_default** identifier and at least 5 (better 10) other category identifiers to support categories for push notifications with toast buttons, e.g.:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSExtensionAttributes</key>
+    <dict>
+        <key>UNNotificationExtensionCategory</key>
+        <array>
+            <string>libnotify_default</string>
+            <string>libnotify_button_queue_1</string>
+            <string>libnotify_button_queue_2</string>
+            <string>libnotify_button_queue_3</string>
+            <string>libnotify_button_queue_4</string>
+            <string>libnotify_button_queue_5</string>
+        </array>
+        <key>UNNotificationExtensionUserInteractionEnabled</key>
+        <true/>
+        <key>UNNotificationExtensionInitialContentSizeRatio</key>
+        <real>0.85</real>
+        <key>UNNotificationExtensionDefaultContentHidden</key>
+        <false/>
+    </dict>
+    <key>NSExtensionMainStoryboard</key>
+    <string>MainInterface</string>
+    <key>NSExtensionPointIdentifier</key>
+    <string>com.apple.usernotifications.content-extension</string>
+</dict>
+</plist>
+
+
+        
+4) All modules must contain the same CXHubSDK config file: Notification.plist (example is below), which must contain the same key and array as in content extension Info.plist:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>LibNotify</key>
+    <dict>
+        <key>UNNotificationExtensionCategory</key>
+        <array>
+            <string>libnotify_default</string>
+            <string>libnotify_button_queue_1</string>
+            <string>libnotify_button_queue_2</string>
+            <string>libnotify_button_queue_3</string>
+            <string>libnotify_button_queue_4</string>
+            <string>libnotify_button_queue_5</string>
+        </array>
+        <key>Enabled</key>
+        <true/>
+        <key>Landing</key>
+        <dict>
+            <key>CloseButtonColor</key>
+            <string>#70D05A</string>
+            <key>ButtonTextColor</key>
+            <string>#FFFFFF</string>
+            <key>AccentColor</key>
+            <string>#FF0000</string>
+            <key>TextColor</key>
+            <string>#000000</string>
+            <key>BackgroundColor</key>
+            <string>#FFFFFF</string>
+        </dict>
+        <key>Application</key>
+        <dict>
+            <key>Secret</key>
+            <string>**CXHub secret key **</string>
+            <key>Name</key>
+            <string>**CXHub application name **</string>
+            <key>Id</key>
+            <string>**CXHub application id **</string>
+        </dict>
+    </dict>
+    <key>SharedGroupId</key>
+    <string>**app shared group id, e.g.: group.com.yourAppId **</string>
+    <key>Enabled</key>
+    <true/>
+    <key>Debug</key>
+    <true/>
+</dict>
+</plist>
+
+5) CXHubSDK uses "shared" NSUserDefaults ( [[NSUserDefaults alloc] initWithSuiteName:**_your_app_group_id_**] ) to store share notification category-related data among mainApp, service extenstion and content extension. Therefore be careful if you use the same shared container and never call "reset", otherwise notification actions may work incorrectly.
 
 ### Localization
 

@@ -25,6 +25,16 @@ CX_EXTERN NSString *const CX_LIBNOTIFY_PUSH_DATA_KEY;
  * */
 CX_EXTERN NSString *const CX_LIBNOTIFY_ROOT_DATA_KEY;
 
+/**
+ * Defines top level json object of notification content sent from APNS.
+ * */
+CX_EXTERN NSString *const CX_LIBNOTIFY_APS_DATA_KEY;
+
+/**
+ * Defines category key of {@link CX_LIBNOTIFY_APS_DATA_KEY}, that contains category identifier sent from Notify API.
+ * */
+CX_EXTERN NSString *const CX_LIBNOTIFY_CATEGORY_IDENTIFIER_KEY;
+
 @interface CXNotify : NSObject
 
 + (instancetype)new NS_UNAVAILABLE;

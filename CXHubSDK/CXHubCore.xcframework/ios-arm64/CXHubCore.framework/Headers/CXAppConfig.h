@@ -64,6 +64,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) CXNotifyConfig *notifyConfig;
 
+/**
+ * Development team identifier (need to use shared UserDefaults between app and extensions)
+ */
+@property (nonatomic, copy, nullable) NSString *teamId;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import <UserNotificationsUI/UserNotificationsUI.h>
 
 #import <CXHubCore/CXConstants.h>
 #import <CXHubCore/CXUnhandledErrorReceiver.h>
@@ -29,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
+
+@property (class, readonly) CXAppConfig *currentConfig;
+
 
 /**
  * Initialize services with config Notify.config
@@ -151,6 +155,21 @@ NS_ASSUME_NONNULL_BEGIN
                                  withCompletionHandler:(CXCallBack)completionHandler;
 
 /**
+ * Proxy method to process push notification action response from a user.
+ * Automatically detects whether this data has been originated from libnotify API or not.
+ * In case of this is libnotify data, returns aggregated @{link CXBackgroundFetchCallback} callback,
+ * which will call the system one after push precessing completion or after timeout expiration.
+ * @param response user push notification response
+ * @param identifier UNNotificationAction identifier
+ * @param completionHandler system completion handler
+ * @returns aggregated completion handler in case userInfo contains libnotify push data,
+ *          otherwise the original system handler
+ * */
++(nullable CXCallBack) didReceiveNotificationResponse:(UNNotificationResponse *)response
+                                 withActionIdentifier:(nullable NSString *)identifier
+                                withCompletionHandler:(CXCallBack)completionHandler;
+
+/**
  * Proxy method to receive local notifications (when application is in foreground).
  * Automatically detects whether this data has been originated from libnotify API or not.
  * In case of this is libnotify data, returns aggregated @{link CXCallBack} callback,
@@ -222,6 +241,22 @@ NS_ASSUME_NONNULL_BEGIN
  * */
 
 +(BOOL) serviceExtensionTimeWillExpire;
+
+#pragma mark - Content extension methods
+
+/**
+ * Proxy method to process push notification action response from a user via ContentExtension.
+ * Automatically detects whether this data has been originated from libnotify API or not.
+ * In case of this is libnotify data, returns aggregated @{link CXBackgroundFetchCallback} callback,
+ * which will call the system one after push precessing completion or after timeout expiration.
+ * @param response user push notification response
+ * @param context NSExtensionContext ContentExtension context
+ * @param completionHandler system completion handler (will be run, when action processing succeed or fail
+ * */
+
++ (void)didReceiveExtensionNotificationResponse:(UNNotificationResponse *)response
+                                 inContext:(NSExtensionContext *)context
+                                         completionHandler:(void (^)(UNNotificationContentExtensionResponseOption option))completionHandler;
 
 @end
 

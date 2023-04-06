@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy, nullable) NSString *appSecretKey;
 
+@property (nonatomic, readonly) NSArray <NSString *> * notificationCategories;
+
 /*!
  Landing properties
  */
