@@ -43,6 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, getter=isDebug) bool debug;
 
+/**
+ This flag shows if sandbox mode is on or off (is used only for library internal purposes)
+ */
+@property (nonatomic, readonly) bool isSandbox;
+
 /*!
  Identifier of one of shared groups from entitlements file.
  This parameter is required for correct work of extensions.
@@ -63,11 +68,6 @@ NS_ASSUME_NONNULL_BEGIN
  Config of libnotify
  */
 @property (nonatomic, readonly) CXNotifyConfig *notifyConfig;
-
-/**
- * Development team identifier (need to use shared UserDefaults between app and extensions)
- */
-@property (nonatomic, copy, nullable) NSString *teamId;
 
 @end
 
