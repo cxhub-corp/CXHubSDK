@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIApplication.h>
-
+#import <UserNotifications/UserNotifications.h>
 #import <CXHubNotify/CXNotifyEventsCollector.h>
 #import <CXHubNotify/CXNotifyGDPRSupport.h>
 
@@ -12,10 +12,11 @@
  - CXNotificationStateOnlyTransactions: Only notifications "on request" are enabled
  */
 typedef NS_ENUM(NSInteger, CXNotificationState) {
-    CXNotificationStateEnabled = 0,
-    CXNotificationStateDisabled,
-    CXNotificationStateOnlyTransactions
+    CXNotificationStateEnabled = 0, //@"enabled"
+    CXNotificationStateDisabled, //@"disabled"
+    CXNotificationStateRestricted//CXNotificationStateOnlyTransactions //@"only_transactions"
 };
+typedef NSDictionary<NSString *, NSObject<NSCoding> *> * CXPushNotificationState;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -51,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
  State of notifications
  */
 @property (nonatomic, assign) CXNotificationState notificationState;
+
+/*!
+ Updates push notification permissions state
+ */
+- (void)updatePushNotificationStateWithNotificationSettings:(UNNotificationSettings *)notificationSettings;
 
 /*!
  Set delegate for libnotify.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'CXHubSDK'
-    s.version          = '2.0.38'
+    s.version          = '2.0.39'
     s.summary          = 'CXHubSDK implementation.'
     
     s.description      = <<-DESC
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://cxhub.mail.ru'
     s.license          = { :type => 'LGPL-3.0', :file => 'CXHubSDK/LICENSE' }
     s.author           = { 'CXHub Mail.ru' => 'cxhub@corp.mail.ru' }
-    s.source           = { :git => 'https://github.com/cxhub-corp/CXHubSDK.git', :tag => 'v2.0.38' }
-    s.ios.deployment_target = '11.0'
+    s.source           = { :git => 'https://github.com/cxhub-corp/CXHubSDK.git', :tag => 'v2.0.39' }
+    s.ios.deployment_target = '12.1'
     
     s.default_subspec  = ['Core', 'Notify']
     

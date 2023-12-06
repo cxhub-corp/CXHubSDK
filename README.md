@@ -119,7 +119,7 @@ CXHubSDK обеспечивает корректное отображение о
 
 ### 1. Добавление библиотеки в проект 
 
-Для подключения библиотеки в проект используется CocoaPods.
+#### 1.1 Для подключения библиотеки в проект используется CocoaPods.
 
 Пример Pod-файла:
 
@@ -145,6 +145,15 @@ pod deintegrate
 pod install
 ```
 После этого открыть xcworkspace файл. Все зависимости будут добавлены в workspace.
+
+#### 1.2 Добавление разрешений (Capabitilies) в приложение:
+
+Для корректной работы библиотеки в приложение должны быть добавлены следующие Capabilities:
+ **Access Wi-Fi Information**
+ **App Groups** (значение должно соответствовать SharedGroupId в конфигурационном файле библиотеки (см. [`Подключение и базовая настройка библиотеки / 2. Конфигурационный файл`](#2-конфигурационный-файл) ))
+ **Background Modes**: BackgroundFetch, Remote notifications
+ **Communication Notifications** (для корректного отображения пользовательских иконок в пушах)
+ **Push Notifications**
 
 
 ### 2. Конфигурационный файл
@@ -498,9 +507,17 @@ Notify-release.plist `(Debug [Boolean] False)`
             <key>NSExtensionPointIdentifier</key>
             <string>com.apple.usernotifications.content-extension</string>
         </dict>
+        
+        <key>NSUserActivityTypes</key>
+        <array>
+            <string>INSendMessageIntent</string>
+        </array>
+        
     </dict>
     </plist>
 ```
+
+В Info.plist необходимо добавить ключ: **NSUserActivityTypes : Array** и значение **Item0 : String : INSendMessageIntent** это необходимо для корректного отображения левой пользовательской иконки в пуше (вместе с иконкой приложения в правом нижнем углу пользовательской иконки) 
 
 **NB:** Info.plist для расширения ContentExtension должен содержать тот же список категорий, который содержится в Notify.plist (см. [`Подключение и базовая настройка библиотеки / 2. Конфигурационный файл`](#2-конфигурационный-файл) )
      

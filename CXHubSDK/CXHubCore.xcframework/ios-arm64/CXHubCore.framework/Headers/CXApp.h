@@ -181,6 +181,12 @@ NS_ASSUME_NONNULL_BEGIN
  * */
 + (CXCallBack) didReceiveLocalNotification:(nullable NSDictionary *)userInfo
                       withCompletionHandler:(CXCallBack)completionHandler;
+/**
+ * Informs CXHub about push notification permissions state
+ * @param notificationSettings received notification settings/permissions
+ */
+
++ (void)didReceiveUserNotificationSettings:(UNNotificationSettings *)notificationSettings;
 
 /**
  * Delivery new device token to all libraries.
